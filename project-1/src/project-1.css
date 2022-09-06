@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.react-logo {
+  height: 30px;
+  width: 40px;
+  padding-right: 5px;
+}
+
+.logo-title {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #61dafb;
+}
+
+.extra-title {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #deebf8;
+}
+
+.container {
+  width: 550px;
+  margin: 10px auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background: #21222a;
+  justify-content: space-between;
+  padding: 30px 25px;
+}
+
+.main-logo {
+  display: flex;
+  align-items: center;
+}
+
+.h1-title {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+  color: #fff;
+}
+
+.body-text {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+  padding-bottom: 20px;
+  list-style: url(images/styled-bullet.png);
+}
+
+.facts {
+  padding-left: 50px;
+}
+
+.main-body {
+  background: #282d35;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  padding: 55px 90px 100px 30px;
+  background-image: url(images/reactjs-icon.png);
+  background-repeat: no-repeat;
+  background-position-x: 420px;
+  background-position-y: 120px;
+}
