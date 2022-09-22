@@ -7,7 +7,13 @@ export default function Navbar() {
         <img className="react-logo" src={logo} alt="" />
         <h3 className="logo-title">React Facts</h3>
       </div>
-      <h4 className="extra-title">React Course - Project 1</h4>
+      <div className="toggle">
+        <p className={light}>Light</p>
+        <div className={change} onClick={handleClick}>
+          <div className={circle}></div>
+        </div>
+        <p className={dark}>Dark</p>
+      </div>
     </nav>
   );
 }
