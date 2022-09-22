@@ -12,7 +12,7 @@ export default function Main() {
       <h1 className="h1-title">Fun facts about React</h1>
       <ul className="facts">
         {facts.map((fact) => (
-          <li className="body-text">{fact}</li>
+          <li key={fact} className="body-text">{fact}</li>
         ))}
       </ul>
     </main>

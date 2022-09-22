@@ -11,32 +11,40 @@
 }
 
 .logo-title {
-  font-family: "Inter";
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
   color: #61dafb;
 }
 
-.extra-title {
-  font-family: "Inter";
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 20px;
-  color: #deebf8;
+.app {
+  background-color: black;
+  min-height: 100vh;
+}
+
+.app-dark {
+  background-color: #fff;
 }
 
 .container {
   width: 550px;
-  margin: 10px auto;
+  margin: auto;
+  padding-block: 20px;
+  font-family: "Inter";
 }
 
 .navbar {
   display: flex;
   align-items: center;
-  background: #21222a;
+  background: #fff;
   justify-content: space-between;
   padding: 30px 25px;
+  box-shadow: inset 0 1px 4px rgb(0 0 0 / 25%);
+  z-index: 1;
+}
+
+.navbar-dark {
+  background-color: #21222a;
 }
 
 .main-logo {
@@ -45,19 +53,15 @@
 }
 
 .h1-title {
-  font-family: "Inter";
   font-weight: 700;
   font-size: 40px;
   line-height: 45px;
-  color: #fff;
 }
 
 .body-text {
-  font-family: "Inter";
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
-  color: #fff;
   padding-bottom: 20px;
   list-style: url(images/styled-bullet.png);
 }
@@ -67,13 +71,75 @@
 }
 
 .main-body {
-  background: #282d35;
+  background: #fff;
   display: flex;
   flex-direction: column;
   gap: 45px;
   padding: 55px 90px 100px 30px;
-  background-image: url(images/reactjs-icon.png);
+  background-image: url(images/reactjs-icon-light.png);
   background-repeat: no-repeat;
-  background-position-x: 420px;
-  background-position-y: 120px;
+  background-position: 420px 120px;
+  color: #2b283a;
+}
+
+.main-body-dark {
+  background-image: url("./images/reactjs-icon-dark.png");
+  background-color: #282d35;
+  color: white;
+}
+
+.toggle {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #deebf8;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-switch {
+  height: 15px;
+  width: 25px;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  cursor: pointer;
+  box-sizing: content-box;
+  background-color: #2b283a;
+  margin-inline: 10px;
+  justify-content: flex-start;
+}
+
+.toggle-switch-dark {
+  border-color: white;
+  background-color: #f5f5f5;
+  justify-content: flex-end;
+}
+
+.switch__circle {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.switch__circle-dark {
+  background: black;
+}
+
+.light {
+  color: #2b283a;
+}
+
+.light-dark__mode {
+  color: #918e9b;
+}
+
+.dark {
+  color: #d5d4d8;
+}
+
+.dark-dark__mode {
+  color: #fff;
 }
