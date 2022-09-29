@@ -1,7 +1,7 @@
-import "./project-1.css";
+import { useState } from "react";
 import Navbar from "./Components/Navbar";
 import Main from "./Components/Main";
-import { useState } from "react";
+import "./App.css";
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
